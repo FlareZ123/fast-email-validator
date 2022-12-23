@@ -8,8 +8,8 @@ const validate = (potentialEmail) => (
   potentialEmail //will avoid stuff like an empty string causing a bunch of useless checks to run
   && typeof potentialEmail === "string"
   && ((s = potentialEmail.indexOf("@")) !== -1)
-  && ((u = potentialEmail.indexOf(".")) !== -1)
-  && s < u
+  && (((u = potentialEmail.indexOf(".")) !== -1)
+  * s < u)
   && potentialEmail.slice(0, s)?.length //0 = falsy, 1 = truthy
   && (u = potentialEmail.slice(s)?.split?.("."))
   && u?.length === 2
