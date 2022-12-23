@@ -1,6 +1,6 @@
 {
     "name": "fast-email-validator",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Fastest email validator package, optimized with JS intricacies in mind.",
     "license": "MIT",
     "repository": "FlareZ123/fast-email-validator",
