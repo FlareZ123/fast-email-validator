@@ -5,7 +5,7 @@ let s, u;
  * @param {any} potentialEmail
  */
 const validate = (potentialEmail) => (
-  potentialEmail
+  potentialEmail //will avoid stuff like an empty string causing a bunch of useless checks to run
   && typeof potentialEmail === "string"
   && ((s = potentialEmail.indexOf("@")) !== -1)
   && ((u = potentialEmail.indexOf(".")) !== -1)
